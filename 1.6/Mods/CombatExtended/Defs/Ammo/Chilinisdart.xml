@@ -29,7 +29,7 @@
   </ThingDef>
   <ThingDef Name="Bullet_CHDartbasicbase_Base" ParentName="BaseBulletCE" Abstract="True">
     <graphicData>
-      <texPath>Things/Projectile/Dart_Basic</texPath>
+      <texPath>Things/Projectile/Dart_SMG</texPath>
       <graphicClass>Verse.Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -42,7 +42,7 @@
     <defName>Ammo_CHDartbasicbase_Inyector</defName>
     <label>chilinis dart</label>
     <graphicData>
-      <texPath>Things/Ammo/Dart/chilinis</texPath>
+      <texPath>Things/Ammo/Dart/Chilinis/chilinis</texPath>
       <graphicClass>Verse.Graphic_StackCount</graphicClass>
     </graphicData>
     <ammoClass>Nail</ammoClass>

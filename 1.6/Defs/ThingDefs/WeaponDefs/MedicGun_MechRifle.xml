@@ -18,7 +18,7 @@
 	<ThingDef ParentName="BaseGun">
 		<defName>CH_MedicGun_MechRifle</defName>
 		<label>Chinis Mender</label>
-		<description>A mechanoid manufactured rifle designed to fire darts filled with liquid substances such as HPserum, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be fueled, an internal mechanism applies a new algorithm to the mechanites within the stored substance, allowing them to perform their effects in mechanoids.\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nConsumes 2 fuel units per shoot, base healing ammount is 3 hitpoints, can heal at maximun 2 wounds per bullet. Can heal both organic beings and mechanoids</description>
+		<description>A mechanoid manufactured rifle designed to fire darts filled with liquid substances such as HPserum, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be fueled, an internal mechanism applies a new algorithm to the mechanites within the stored substance, allowing them to perform their effects in mechanoids.\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nConsumes 2 fuel units per shoot, base healing ammount is 4 hitpoints, can heal at maximun 2 wounds per bullet. Can heal both organic beings and mechanoids</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_HealingCanister_Basic</ThingDef>
             <ThingDef>CH_HealingCanister</ThingDef>   
@@ -89,7 +89,7 @@
 			<li Class="CombatHealing.CompProperties_CHFuel">
 				<capacity>100</capacity>
 				<consumption>2</consumption>
-				<baseHealAmount>3</baseHealAmount>
+				<baseHealAmount>4</baseHealAmount>
 				<totalHeals>2</totalHeals>
 				<partHeals>2</partHeals>
 				<canHealMechs>true</canHealMechs>
