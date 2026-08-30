@@ -3,16 +3,16 @@
     <Operation Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationConditional">
-          <xpath>Defs/ThingDef[defName="CH_MedicGun_Basic"]/tools</xpath>
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Rifle"]/tools</xpath>
           <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="CH_MedicGun_Basic"]</xpath>
+            <xpath>Defs/ThingDef[defName="CH_MedicGun_Rifle"]</xpath>
             <value>
               <tools />
             </value>
           </nomatch>
         </li>
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[defName="CH_MedicGun_Basic"]/tools</xpath>
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Rifle"]/tools</xpath>
           <value>
             <tools Inherit="False">
               <li Class="CombatExtended.ToolCE">
@@ -24,7 +24,7 @@
                   <extraMeleeDamages />
                 </surpriseAttack>
                 <extraMeleeDamages />
-                <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                <armorPenetrationBlunt>2.75</armorPenetrationBlunt>
                 <power>9</power>
                 <cooldownTime>1.55</cooldownTime>
                 <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
@@ -38,7 +38,7 @@
                   <extraMeleeDamages />
                 </surpriseAttack>
                 <extraMeleeDamages />
-                <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                <armorPenetrationBlunt>2.75</armorPenetrationBlunt>
                 <power>9</power>
                 <cooldownTime>1.55</cooldownTime>
                 <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
@@ -47,59 +47,59 @@
           </value>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="CH_MedicGun_Basic"]/verbs/li[verbClass="CombatHealing.Verb_ShootCH"]</xpath>
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Rifle"]/verbs/li[verbClass="CombatHealing.Verb_ShootCH"]</xpath>
         </li>
         <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-          <defName>CH_MedicGun_Basic</defName>
+          <defName>CH_MedicGun_Rifle</defName>
           <statBases>
             <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
-            <Bulk>2.1</Bulk>
+            <Bulk>10.03</Bulk>
+            
             <SightsEfficiency>1.40</SightsEfficiency>
             <SwayFactor>0.33</SwayFactor>
             <ShotSpread>0.07</ShotSpread>
-            <Recoil>0.3</Recoil>
-            <MagazineCapacity>30</MagazineCapacity>
-            <ReloadSpeed>4</ReloadSpeed>
-            <AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
-            <ReloadTime>4</ReloadTime>
+            <Recoil>0.8</Recoil>
+            <MagazineCapacity>10</MagazineCapacity>
+            <ReloadSpeed>0.4</ReloadSpeed>
+            <AmmoGenPerMagOverride>10</AmmoGenPerMagOverride>
+            <ReloadTime>0.4</ReloadTime>
           </statBases>
           <Properties>
             <verbClass>CombatHealing.CE.Verb_ShootCH_CE</verbClass>
             <hasStandardCommand>True</hasStandardCommand>
-            <warmupTime>0.5</warmupTime>
-            <range>19</range>
-            <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-            <burstShotCount>3</burstShotCount>
+            <warmupTime>0.8</warmupTime>
+            <range>24</range>
+            <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+            <burstShotCount>1</burstShotCount>
             <muzzleFlashScale>1</muzzleFlashScale>
             <defaultProjectile>Bullet_CHDartbasicbase_Inyector</defaultProjectile>
             <soundCast>CH_DartShot</soundCast>
-            <soundCastTail>GunTail_Medium</soundCastTail>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
           </Properties>
           <AmmoUser>
-            <magazineSize>30</magazineSize>
-            <reloadTime>4</reloadTime>
-            <AmmoGenPerMagOverride>4</AmmoGenPerMagOverride>
-            <reloadOneAtATime>False</reloadOneAtATime>
+            <magazineSize>10</magazineSize>
+            <reloadTime>0.4</reloadTime>
+            <reloadOneAtATime>True</reloadOneAtATime>
+            <AmmoGenPerMagOverride>10</AmmoGenPerMagOverride>
             <ammoSet>AmmoSet_CHDartbasicbase</ammoSet>
           </AmmoUser>
           <FireModes>
             <aiUseBurstMode>True</aiUseBurstMode>
-            <noSingleShot>True</noSingleShot>
+            <noSnapshot>True</noSnapshot>
           </FireModes>
           <weaponTags>
-            <li>CE_OneHandedWeapon</li>
-            <li>CE_AI_Pistol</li>
+            <li>CE_AI_Rifle</li>
           </weaponTags>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>Defs/ThingDef[defName="CH_MedicGun_Basic"]/comps</xpath>
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Rifle"]/comps</xpath>
           <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="CH_MedicGun_Basic"]</xpath>
+            <xpath>Defs/ThingDef[defName="CH_MedicGun_Rifle"]</xpath>
             <value>
               <comps />
             </value>
           </nomatch>
         </li>
       </operations>
-    </Operation>
+  </Operation>
 </Patch>

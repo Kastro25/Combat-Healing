@@ -42,7 +42,7 @@
     <defName>Ammo_CHDartbasicbase_Inyector</defName>
     <label>chilinis dart</label>
     <graphicData>
-      <texPath>Things/Ammo/Dart/chynis</texPath>
+      <texPath>Things/Ammo/Dart/chilinis</texPath>
       <graphicClass>Verse.Graphic_StackCount</graphicClass>
     </graphicData>
     <ammoClass>Nail</ammoClass>
@@ -60,9 +60,9 @@
   </ThingDef>
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_CHDartbasicbase_Inyector</defName>
-    <label>make inyector dart x100</label>
-    <description>Craft 100 inyector darts.</description>
-    <jobString>Making inyector dartss</jobString>
+    <label>make chilinis dart x100</label>
+    <description>Craft 100 chilinis darts.</description>
+    <jobString>Making chilinis darts</jobString>
     <researchPrerequisites>
 					<li>CH_Research_medicdartguns</li>
 		</researchPrerequisites>
