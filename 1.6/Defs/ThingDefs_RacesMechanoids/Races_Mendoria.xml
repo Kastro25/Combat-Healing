@@ -61,8 +61,7 @@
 			<Steel>25</Steel>
 		</butcherProducts>
 		<comps>
-			<li Class="VEF.AnimalBehaviours.CompProperties_Floating">
-
+			<li Class="VEF.AnimalBehaviours.CompProperties_Floating" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 			</li>
 		</comps>
 	</ThingDef>

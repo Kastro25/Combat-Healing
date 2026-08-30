@@ -1,25 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
   <Operation Class="PatchOperationSequence">
     <operations>
 
-      <li Class="PatchOperationInsert">
-        <xpath>Defs/ThinkTreeDef[defName="Humanlike"]/thinkRoot/subNodes/li[1]</xpath>
-        <order>Prepend</order>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes</xpath>
+        <order>Append</order>
         <value>
           <li Class="CombatHealing.JobGiver_ReloadHealingWeapon"/>
         </value>
       </li>
-
-      <li Class="PatchOperationInsert">
-        <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[1]</xpath>
-        <order>Prepend</order>
-        <value>
-          <li Class="CombatHealing.JobGiver_ReloadHealingWeapon"/>
-        </value>
-      </li>
-
     </operations>
   </Operation>
 

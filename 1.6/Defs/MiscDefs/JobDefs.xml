@@ -9,4 +9,18 @@
     <playerInterruptible>true</playerInterruptible>
   </JobDef>
 
+  <ThinkTreeDef>
+    <defName>CH_ReloadHealingWeaponThinkTree</defName>
+
+    <insertTag>Humanlike_PreMain</insertTag>
+    <insertPriority>100</insertPriority>
+
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="CombatHealing.JobGiver_ReloadHealingWeapon" />
+      </subNodes>
+    </thinkRoot>
+
+  </ThinkTreeDef>
+
 </Defs>
