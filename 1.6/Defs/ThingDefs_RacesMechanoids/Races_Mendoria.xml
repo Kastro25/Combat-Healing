@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Mendoria -->
+	<ThingDef ParentName="BaseMechanoid">
+		<defName>CH_Mendoria</defName>
+		<label>mendoria</label>
+		<description>Una mecanoide de soporte diseñado para curar a sus aliados en mitad de la batalla, es capaz de curar otros mecanoides tambien pero inútil para defenderse a si misma, cuenta con una pantalla led, originalmente creada por humanos para tener un soporte amigable en el campo de batalla, la colmena mecanoide tambien usa este mismo modelo, con VEF es capaz de evitar los costes de terreno</description>
+		<graphicData>
+        	<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria</texPath>
+        	<graphicClass>Graphic_Multi</graphicClass>
+    	</graphicData>
+		
+		<statBases>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>1600</MarketValue>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
+			 <BandwidthCost>3</BandwidthCost>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		<race>
+			<body>Mech_Light</body>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+			<baseBodySize>1</baseBodySize>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<mechWeightClass>Light</mechWeightClass>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+		<butcherProducts>
+			<Steel>25</Steel>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="BaseMechanoidKind">
+		<defName>CH_Mendoria</defName>
+		<label>mendoria</label>
+		<race>CH_Mendoria</race>
+		<allowInMechClusters>true</allowInMechClusters>
+		<isFighter>false</isFighter>
+		<combatPower>85</combatPower>
+		<weaponMoney>9999~9999</weaponMoney>
+		
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>9999~9999</techHediffsMoney>
+		<controlGroupPortraitZoom>1.8</controlGroupPortraitZoom>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria</texPath>
+					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<weaponTags>
+			<li>MechanoidMedicgun</li>
+		</weaponTags>
+	</PawnKindDef>
+</Defs>

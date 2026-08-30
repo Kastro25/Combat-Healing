@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef>
+		<defName>CH_Healing</defName>
+		<label>healing</label>
+		<workerClass>CombatHealing.DamageWorker_Healing</workerClass>
+		<externalViolence>false</externalViolence>
+		<harmsHealth>false</harmsHealth>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+	</DamageDef>
+</Defs>

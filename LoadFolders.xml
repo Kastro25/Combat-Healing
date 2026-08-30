@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<loadFolders>
+    <v1.6>
+        <!-- Core Files -->
+	<li>/</li>
+	<li>1.6</li>
+	<!-- Patches -->	
+        <li IfModActive="CETeam.CombatExtended">1.6/Mods/CombatExtended</li>
+	<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Biotech</li>	
+    </v1.6>
+</loadFolders>

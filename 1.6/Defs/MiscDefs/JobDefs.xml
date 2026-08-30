@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <JobDef>
+    <defName>CH_ReloadHealingWeapon</defName>
+    <driverClass>CombatHealing.JobDriver_ReloadHealingWeapon</driverClass>
+    <reportString>Changing canister</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <playerInterruptible>true</playerInterruptible>
+  </JobDef>
+
+  <ThinkTreeDef>
+    <defName>CH_ReloadHealingWeaponThinkTree</defName>
+
+    <insertTag>Humanlike_PreMain</insertTag>
+    <insertPriority>100</insertPriority>
+
+    <thinkRoot Class="CombatHealing.JobGiver_ReloadHealingWeapon"/>
+  </ThinkTreeDef>
+
+</Defs>

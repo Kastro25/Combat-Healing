@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>CH_Mendoria</defName>
+    <label>gestate mendoria</label>
+    <description>Gestate a mendoria mechanoid.</description>
+    <recipeUsers><li>MechGestator</li></recipeUsers>
+    <researchPrerequisites>
+      <li>StandardMechtech</li>
+      <li>CH_Research_medicdartguns</li>
+    </researchPrerequisites>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <CH_Mendoria>1</CH_Mendoria>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>CH_Mendoria</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+ 
+
+</Defs>

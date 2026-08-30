@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Advanced"]/tools</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CH_MedicGun_Advanced"]</xpath>
+            <value>
+              <tools />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Advanced"]/tools</xpath>
+          <value>
+            <tools Inherit="False">
+              <li Class="CombatExtended.ToolCE">
+                <label>stock</label>
+                <capacities>
+                  <li>Blunt</li>
+                </capacities>
+                <surpriseAttack>
+                  <extraMeleeDamages />
+                </surpriseAttack>
+                <extraMeleeDamages />
+                <armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+                <power>9</power>
+                <cooldownTime>1.55</cooldownTime>
+                <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+              </li>
+              <li Class="CombatExtended.ToolCE">
+                <label>muzzle</label>
+                <capacities>
+                  <li>Poke</li>
+                </capacities>
+                <surpriseAttack>
+                  <extraMeleeDamages />
+                </surpriseAttack>
+                <extraMeleeDamages />
+                <armorPenetrationBlunt>2.75</armorPenetrationBlunt>
+                <power>9</power>
+                <cooldownTime>1.55</cooldownTime>
+                <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+              </li>
+            </tools>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Advanced"]/verbs/li[verbClass="CombatHealing.Verb_ShootCH"]</xpath>
+        </li>
+        <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+          <defName>CH_MedicGun_Advanced</defName>
+          <statBases>
+            <RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+            <Bulk>10.03</Bulk>
+            
+            <SightsEfficiency>1.40</SightsEfficiency>
+            <SwayFactor>0.33</SwayFactor>
+            <ShotSpread>0.07</ShotSpread>
+            <Recoil>0.8</Recoil>
+            <MagazineCapacity>10</MagazineCapacity>
+            <ReloadSpeed>0.4</ReloadSpeed>
+            <AmmoGenPerMagOverride>10</AmmoGenPerMagOverride>
+            <ReloadTime>0.4</ReloadTime>
+          </statBases>
+          <Properties>
+            <verbClass>CombatHealing.CE.Verb_ShootCH_CE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <warmupTime>0.8</warmupTime>
+            <range>24</range>
+            <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+            <burstShotCount>1</burstShotCount>
+            <muzzleFlashScale>1</muzzleFlashScale>
+            <defaultProjectile>Bullet_CHDartadvancedbase_Inyector</defaultProjectile>
+            <soundCast>CH_DartShot</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+          </Properties>
+          <AmmoUser>
+            <magazineSize>10</magazineSize>
+            <reloadTime>0.4</reloadTime>
+            <reloadOneAtATime>True</reloadOneAtATime>
+            <AmmoGenPerMagOverride>10</AmmoGenPerMagOverride>
+            <ammoSet>AmmoSet_CHDartadvancedbase</ammoSet>
+          </AmmoUser>
+          <FireModes>
+            <aiUseBurstMode>True</aiUseBurstMode>
+            <noSnapshot>True</noSnapshot>
+          </FireModes>
+          <weaponTags>
+            <li>CE_AI_Rifle</li>
+          </weaponTags>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="CH_MedicGun_Advanced"]/comps</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="CH_MedicGun_Advanced"]</xpath>
+            <value>
+              <comps />
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+  </Operation>
+</Patch>

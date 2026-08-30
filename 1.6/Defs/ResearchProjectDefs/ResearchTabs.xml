@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>CH_Research_Tab</defName>
+    <label>Healing Solutions</label>
+    <displayPriority>100</displayPriority>
+  </ResearchTabDef>
+
+</Defs>

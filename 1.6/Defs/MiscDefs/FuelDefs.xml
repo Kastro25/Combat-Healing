@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <li Class="CombatHealing.CH_FuelTypeDef">
+        <defName>CH_FuelType_Basic</defName>
+	<label>Economic</label>
+        <fuelThing>CH_HealingCanister_Basic</fuelThing>
+        <healMultiplier>0.85</healMultiplier>
+    </li>
+
+    <li Class="CombatHealing.CH_FuelTypeDef">
+        <defName>CH_FuelType_Standard</defName>
+	<label>Standard</label>
+        <fuelThing>CH_HealingCanister</fuelThing>
+        <healMultiplier>1.25</healMultiplier>
+    </li>
+
+    <li Class="CombatHealing.CH_FuelTypeDef">
+        <defName>CH_FuelType_Advanced</defName>
+	<label>Experimental</label>
+        <fuelThing>CH_HealingCanister_Advanced</fuelThing>
+        <healMultiplier>3.0</healMultiplier>
+    </li>
+
+</Defs>

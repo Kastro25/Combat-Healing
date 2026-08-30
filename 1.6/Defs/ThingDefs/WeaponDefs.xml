@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--====================================================== SMG ======================================================-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>CH_Chilinisbullet_SMG</defName>
+		<label>Chilinis Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Dart_SMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>CH_Healing</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CH_MedicGun_SMG</defName>
+		<label>Chinis Selaria</label>
+		<description>A support gun designed to fire darts filled with liquid substances, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be loaded with hyperhealing canisters, an internal mechanism load darts with the stored substance</description>
+		
+		<graphicData>
+			<texPath>Things/WeaponRange/MedicGun_SMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
+		
+		<recipeMaker>
+				<researchPrerequisites>
+					<li>CH_Research_medicdartguns</li>
+				</researchPrerequisites>
+			<recipeUsers>
+        		<li>TableMachining</li>
+      		</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<displayPriority>420</displayPriority>
+		</recipeMaker>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<smeltable>true</smeltable>
+
+		<soundInteract>Interact_Rifle</soundInteract>
+		<techLevel>Industrial</techLevel>
+		
+		<statBases>	 
+			<WorkToMake>24000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.98</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+			<MarketValue>300</MarketValue>
+		</statBases>
+		
+		<verbs>
+			<li>
+				<verbClass>CombatHealing.Verb_ShootCH</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CH_Chilinisbullet_SMG</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>19</range> <!--Rango del SMG pesado: 23 casillas-->
+				<soundCast>CH_DartShot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>
+
+				<burstShotCount>3</burstShotCount>
+        		<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+			</li>
+		</verbs>
+		<!--Recordatorio de no confundir weaponClasses con weaponTags, weaponClasses define como se comporta un pawn con ese arma-->
+		<weaponClasses>
+			<li>ShortShots</li> <!--Segun oscar postoski short shots pertenece para el máximo rango del SMG pesado, nota para tener en cuenta -->
+			
+		</weaponClasses>
+		<weaponTags> 
+			<li>ShortShots</li> <!--Se supone que  con esto el arma puede aparecer en lugar de smgs pesados y escopetas-->
+			<li>CombatHealingWeapon</li><!--Para el que esté leyendo esto, este tag es para que el arma tenga el comportamiento de disparar a sus aliados, osea que si le pones esto a un rifle, tu pawn va a matar a sus amigos xD-->
+		</weaponTags>
+		<tradeTags> 
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<thingSetMakerTags>
+    		<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+			<li>
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+		</tools>
+
+		<comps>
+			<li Class="CombatHealing.CompProperties_CHFuel">
+				<capacity>120</capacity>
+				<consumption>1</consumption>
+				<baseHealAmount>2</baseHealAmount>
+				<totalHeals>2</totalHeals>
+				<partHeals>1</partHeals>
+				<canHealMechs>false</canHealMechs>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--====================================================== RIFLE ======================================================-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>CH_Chilinisbullet_Rifle</defName>
+		<label>Chilinis Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Dart_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>CH_Healing</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>CH_MedicGun_Rifle</defName>
+		<label>Chinis Magister</label>
+		<description>A support rifle with a great precision designed to fire darts filled with liquid substances, upon impact darts inject the substance directly into the bloodstream of the affected person. An internal mechanism load darts with extra compressed serum, making it consume and heal more</description>
+		
+		<graphicData>
+			<texPath>Things/WeaponRange/MedicGun_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>CH_Research_medicdartguns</li>
+				<li>PrecisionRifling</li>
+			</researchPrerequisites>
+			<recipeUsers>
+        		<li>TableMachining</li>
+      		</recipeUsers>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<displayPriority>420</displayPriority>
+		</recipeMaker>
+		<costList> 
+			<Steel>120</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Gold>2</Gold>
+		</costList>
+		<smeltable>true</smeltable>
+
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<techLevel>Industrial</techLevel> <!--Consideré ponerlo en spacer pero solo podria aparecer en imperiales y eso no se me hace divertido aparte que es mi diseño favorito le dediqué 2 horas a dibujarlo-->
+		
+		<statBases>	
+			<WorkToMake>40000</WorkToMake>
+			<Mass>8</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>0.98</AccuracyMedium>
+			<AccuracyLong>0.89</AccuracyLong>
+			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
+			<MarketValue>800</MarketValue>
+		</statBases>
+		
+		<verbs>
+			<li>
+				<verbClass>CombatHealing.Verb_ShootCH</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CH_Chilinisbullet_Rifle</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>24</range> <!--Rango del Rifle de asalto: 31 casillas-->
+				<soundCast>CH_DartShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>
+			</li>
+		</verbs>
+		<!--Recordatorio de no confundir weaponClasses con weaponTags, weaponClasses define como se comporta un pawn con ese arma-->
+		<weaponClasses>
+			<li>RangedLight</li> <!--Segun tambien oscar postoki, de 23 para arriba se usa weapon light, hasta antes de llegar a longshots, al parecer despues de longshots sigue ranged -->
+		</weaponClasses>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>CombatHealingWeapon</li>
+		</weaponTags>
+		<tradeTags> 
+			<li>WeaponRanged</li>
+		</tradeTags>
+		<thingSetMakerTags>
+    		<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+			<li>
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+		</tools>
+
+		<comps>
+			<li Class="CombatHealing.CompProperties_CHFuel">
+				<capacity>150</capacity>
+				<consumption>5</consumption>
+				<baseHealAmount>15</baseHealAmount>
+				<totalHeals>4</totalHeals>
+				<partHeals>3</partHeals>
+				<canHealMechs>false</canHealMechs>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--====================================================== Mech Rifle ======================================================-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>CH_Chilinisbullet_MechRifle</defName>
+		<label>Chilinis Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Dart_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>CH_Healing</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGun">
+		<defName>CH_MedicGun_MechRifle</defName>
+		<label>Chinis Mender</label>
+		<description>A Mechanoid manufactured dart gun, installs a new algorithm in HP compound mechanites to make them able to heal mechs damaged parts, not enough to heal destroyed parts</description>
+		
+		<graphicData>
+			<texPath>Things/WeaponRange/MedicGun_MechRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>MechanoidMedicgun</li>
+			<li>CombatHealingWeapon</li>
+		</weaponTags>
+
+		<verbs>
+			<li>
+				<verbClass>CombatHealing.Verb_ShootCH</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CH_Chilinisbullet_MechRifle</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>26</range>
+				<soundCast>CH_DartShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>
+
+				<burstShotCount>2</burstShotCount>
+        		<ticksBetweenBurstShots>14</ticksBetweenBurstShots>
+			</li>
+		</verbs>
+		
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+			<li>
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CombatHealing.CompProperties_CHFuel">
+				<capacity>100</capacity>
+				<consumption>1</consumption>
+				<baseHealAmount>3</baseHealAmount>
+				<totalHeals>2</totalHeals>
+				<partHeals>1</partHeals>
+				<canHealMechs>true</canHealMechs>
+			</li>
+		</comps>
+  </ThingDef>
+
+
+</Defs>
