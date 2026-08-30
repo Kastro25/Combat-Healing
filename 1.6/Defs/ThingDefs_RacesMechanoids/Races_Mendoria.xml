@@ -5,7 +5,7 @@
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>CH_Mendoria</defName>
 		<label>mendoria</label>
-		<description>Mendoria is a medical support mechanoid developed to accompany combat squads on frontier worlds, where their major threats made it no longer feasible to evacuate and care for the wounded. They are equipped with a LED display, propellers for fast movement and a Chinis weapon, but they are helpless when alone, incapable of defend themselves. Many centuries ago after a terrible defeat numerous Mendorias went lost in the mech frontier, mech hive appropriated, repurposed and replicated them for its own forces, since then they were able to heal other mechanoids. \n<color #cbff52>Gameplay effect:</color> \nMendoria can heal both organic beings and mechanoids via shooting them. With Vanilla Expanded Framework she ignores terrain movement</description>
+		<description>Mendoria is a medical support mechanoid developed to accompany combat squads on frontier worlds, where their major threats made it no longer feasible to evacuate and care for the wounded. They are equipped with a LED display, propellers for fast movement and a Chinis weapon, but they are helpless when alone, incapable of defend themselves. Many centuries ago after a terrible defeat numerous Mendorias went lost in the mech frontier, mech hive appropriated, repurposed and replicated them for its own forces, since then they were able to heal other mechanoids. \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nMendorias can heal both organic beings and mechanoids via shooting them. With Vanilla Expanded Framework she ignores terrain movement</description>
 		<graphicData>
         	<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria</texPath>
         	<graphicClass>Graphic_Multi</graphicClass>
@@ -14,8 +14,8 @@
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>1600</MarketValue>
-			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.21</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.67</ArmorRating_Sharp>
 			<MechEnergyLossPerHP>0.75</MechEnergyLossPerHP>
 			 <BandwidthCost>3</BandwidthCost>
 		</statBases>
@@ -48,12 +48,25 @@
 					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
 					<soundCall>Pawn_Mech_Militor_Call</soundCall>
 				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+					<soundCall>Pawn_Mech_Militor_Call</soundCall>
+				</li>
 			</lifeStageAges>
 		</race>
 		<butcherProducts>
 			<Steel>25</Steel>
 		</butcherProducts>
+		<comps>
+			<li Class="VEF.AnimalBehaviours.CompProperties_Floating">
+
+			</li>
+		</comps>
 	</ThingDef>
+
 	<PawnKindDef ParentName="BaseMechanoidKind">
 		<defName>CH_Mendoria</defName>
 		<label>mendoria</label>
@@ -69,15 +82,20 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria_Clean</texPath>
+					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Overlay</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
 					<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria</texPath>
 					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Overlay</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.5</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>

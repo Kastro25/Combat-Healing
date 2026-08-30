@@ -5,7 +5,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister_Basic</defName>
 		<label>Economic HPserum</label>
-		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair them in seconds. This economic version uses cheap materials at cost of a lower potency, cannot heal scars, lost limbs or diseases. HP Serum can be loaded inside some weapons \n<color #cbff52>Gameplay effect:</color> \nWeapons using this serum reduces their base healing to 85% of its value</description>
+		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair them in seconds. This economic version uses cheap materials at cost of a lower potency, cannot heal scars, lost limbs or diseases. HP Serum can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nWeapons using this serum reduces their base healing to 85% of its value</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -62,7 +62,7 @@
     <ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister</defName>
 		<label>Standard HPserum</label>
-		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This substance was made with standard protocols that allow to perform a correct and balanced healing, cannot heal scars, lost limbs or diseases. Canisters can be loaded inside some weapons \n<color #cbff52>Gameplay effect:</color> \nWeapons using this serum increases their base healing to 125% of its value</description>
+		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This substance was made with standard protocols that allow to perform a correct and balanced healing, cannot heal scars, lost limbs or diseases. Canisters can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nWeapons using this serum increases their base healing to 125% of its value</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -175,7 +175,7 @@
     <ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister_Advanced</defName>
 		<label>Experimental HPserum</label>
-		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This experimental strain of mechanites is capable of healing a higher quantity of wounds, however, it still cannot heal scars, lost limbs or diseases but can do some miracles if applied correctly. Canisters can be loaded inside some weapons \n<color #cbff52>Gameplay effect:</color> \nWeapons using this serum increases their base healing to 200% of its value</description>
+		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This experimental strain of mechanites is capable of healing a higher quantity of wounds, however, it still cannot heal scars, lost limbs or diseases but can do some miracles if applied correctly. Canisters can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nWeapons using this serum increases their base healing to 200% of its value</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   

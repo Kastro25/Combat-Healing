@@ -5,7 +5,7 @@
     <operations>
 
       <li Class="PatchOperationInsert">
-        <xpath>Defs/ThinkTreeDef[defName="Humanlike"]/thinkRoot/subNodes</xpath>
+        <xpath>Defs/ThinkTreeDef[defName="Humanlike"]/thinkRoot/subNodes/li[1]</xpath>
         <order>Prepend</order>
         <value>
           <li Class="CombatHealing.JobGiver_ReloadHealingWeapon"/>
@@ -13,7 +13,7 @@
       </li>
 
       <li Class="PatchOperationInsert">
-        <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes</xpath>
+        <xpath>Defs/ThinkTreeDef[defName="Mechanoid"]/thinkRoot/subNodes/li[1]</xpath>
         <order>Prepend</order>
         <value>
           <li Class="CombatHealing.JobGiver_ReloadHealingWeapon"/>

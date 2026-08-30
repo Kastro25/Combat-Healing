@@ -19,7 +19,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CH_MedicGun_SMG</defName>
 		<label>Chinis Selaria</label>
-		<description>A support gun designed to fire darts filled with liquid substances such as HPserum, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be fueled, an internal mechanism load darts with the stored substance. \n<color #cbff52>Gameplay effect:</color> \nConsumes 1 fuel units per shoot, base healing ammount is 2 hitpoints, can heal at maximun 1 wound per bullet.</description>
+		<description>A support gun designed to fire darts filled with liquid substances such as HPserum, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be fueled, an internal mechanism load darts with the stored substance. \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nConsumes 1 fuel units per shoot, base healing ammount is 2 hitpoints, can heal at maximun 1 wound per bullet.</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_HealingCanister_Basic</ThingDef>
             <ThingDef>CH_HealingCanister</ThingDef>   
