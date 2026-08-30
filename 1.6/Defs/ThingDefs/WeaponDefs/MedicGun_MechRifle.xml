@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--====================================================== Mech Rifle ======================================================-->
+	<ThingDef ParentName="BaseBullet">
+		<defName>CH_Chilinisbullet_MechRifle</defName>
+		<label>Chilinis Dart</label>
+		<graphicData>
+			<texPath>Things/Projectile/Dart_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>CH_Healing</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseGun">
+		<defName>CH_MedicGun_MechRifle</defName>
+		<label>Chinis Mender</label>
+		<description>A mechanoid manufactured rifle designed to fire darts filled with liquid substances such as HPserum, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be fueled, an internal mechanism applies a new algorithm to the mechanites within the stored substance, allowing them to perform their effects in mechanoids. \n<color=#cbff52>Gameplay effect:</color> \nConsumes 2 fuel units per shoot, base healing ammount is 3 hitpoints, can heal at maximun 2 wounds per bullet. Can heal both organic beings and mechanoids</description>
+		<descriptionHyperlinks>
+            <ThingDef>CH_HealingCanister_Basic</ThingDef>
+            <ThingDef>CH_HealingCanister</ThingDef>   
+            <ThingDef>CH_HealingCanister_Advanced</ThingDef>   
+        </descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/WeaponRange/MedicGun_MechRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<techLevel>Spacer</techLevel>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>true</destroyOnDrop>
+		<relicChance>0</relicChance>
+		
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>MechanoidMedicgun</li>
+			<li>CombatHealingWeapon</li>
+		</weaponTags>
+
+		<verbs>
+			<li>
+				<verbClass>CombatHealing.Verb_ShootCH</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CH_Chilinisbullet_MechRifle</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>26</range>
+				<soundCast>CH_DartShot</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>1</muzzleFlashScale>
+
+				<burstShotCount>2</burstShotCount>
+        		<ticksBetweenBurstShots>13</ticksBetweenBurstShots>
+			</li>
+		</verbs>
+		
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+			<li>
+				<label>muzzle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CombatHealing.CompProperties_CHFuel">
+				<capacity>100</capacity>
+				<consumption>2</consumption>
+				<baseHealAmount>3</baseHealAmount>
+				<totalHeals>2</totalHeals>
+				<partHeals>2</partHeals>
+				<canHealMechs>true</canHealMechs>
+			</li>
+		</comps>
+        
+  </ThingDef>
+</Defs>

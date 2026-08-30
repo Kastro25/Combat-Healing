@@ -6,9 +6,9 @@
   <ResearchProjectDef>
     <defName>CH_Research_economicsubstance</defName>
     <label>Healing Solutions: The basics</label>
-	<tab>CH_Research_Tab</tab>
-    <description>Learn the basics of synthesizing HP Compound, a substance designed for combat filled with specialized mechanites that repair wounds in seconds, discover how to craft a raw version that can be applied via different injection methods.</description>
-    <baseCost>600</baseCost>
+	  <tab>CH_ResearchTab_HealingSolutions</tab>
+    <description>Learn the basics of synthesizing HPserum, a substance designed for combat filled with specialized mechanites that repair wounds in seconds, discover how to craft a raw version that can be applied via different injection methods.</description>
+    <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DrugProduction</li>
@@ -21,8 +21,8 @@
   <ResearchProjectDef>
     <defName>CH_Research_substance</defName>
     <label>Healing Solutions: Standard protocols</label>
-	<tab>CH_Research_Tab</tab>
-    <description>Study a public paper provided by L.I.G.H.T. that describes standard methods and materials for synthesizing and refining HP compound for a greater effect, unlocks standard HP compound recipes.</description>
+	  <tab>CH_ResearchTab_HealingSolutions</tab>
+    <description>Study a public paper provided by L.I.G.H.T. that describes standard methods and materials for synthesizing and refining HPserum for a greater effect, unlocks standard HPserum recipes.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -37,9 +37,9 @@
   <ResearchProjectDef>
     <defName>CH_Research_advancedsubstance</defName>
     <label>Healing Solutions: The Experimental Thesis</label>
-	<tab>CH_Research_Tab</tab>
-    <description>Your colony found an encrypted file on a lost glitterworld network signal, containing the full thesis of the original creator of HP serum, she describes untested methods and hypotheses that allow to unlock the full potential of HP compound. Study this thesis to learn how to craft an experimental compound capable of healing wounds at an increased factor</description>
-    <baseCost>1500</baseCost>
+	  <tab>CH_ResearchTab_HealingSolutions</tab>
+    <description>Your colony found an encrypted file on a lost glitterworld network signal, containing the full thesis of the original creator of HPserum, she describes untested methods and hypotheses that allow to unlock the full potential of HPserum. Study this thesis to learn how to craft an experimental compound capable of healing wounds at an increased factor</description>
+    <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>CH_Research_substance</li>
@@ -55,8 +55,8 @@
   <ResearchProjectDef>
     <defName>CH_Research_medicdartguns</defName>
     <label>Chinis-Series Dartguns</label>
-	<tab>CH_Research_Tab</tab>
-    <description>Craft chinis weapons</description>
+	  <tab>CH_ResearchTab_HealingSolutions</tab>
+    <description>Craft chinis weapons, designed for shooting darts filled with substances</description>
     <baseCost>200</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

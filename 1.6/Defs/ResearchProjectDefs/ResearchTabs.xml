@@ -2,7 +2,7 @@
 <Defs>
 
   <ResearchTabDef>
-    <defName>CH_Research_Tab</defName>
+    <defName>CH_ResearchTab_HealingSolutions</defName>
     <label>Healing Solutions</label>
     <displayPriority>100</displayPriority>
   </ResearchTabDef>
