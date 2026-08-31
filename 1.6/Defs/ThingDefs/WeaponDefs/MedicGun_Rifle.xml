@@ -59,7 +59,7 @@
 			<AccuracyTouch>1</AccuracyTouch>
 			<AccuracyShort>1</AccuracyShort>
 			<AccuracyMedium>0.98</AccuracyMedium>
-			<AccuracyLong>0.89</AccuracyLong>
+			<AccuracyLong>0.96</AccuracyLong>
 			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
 			<MarketValue>800</MarketValue>
 		</statBases>

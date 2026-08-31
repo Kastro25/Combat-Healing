@@ -56,9 +56,9 @@
 			<WorkToMake>24000</WorkToMake>
 			<Mass>2</Mass>
 			<AccuracyTouch>1</AccuracyTouch>
-			<AccuracyShort>0.98</AccuracyShort>
-			<AccuracyMedium>0.75</AccuracyMedium>
-			<AccuracyLong>0.60</AccuracyLong>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.91</AccuracyLong>
 			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
 			<MarketValue>300</MarketValue>
 		</statBases>
@@ -69,7 +69,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>CH_Chilinisbullet_SMG</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
-				<range>19</range> <!--Rango del SMG pesado: 23 casillas-->
+				<range>12</range> <!--Rango del SMG pesado: 23 casillas-->
 				<soundCast>CH_DartShot</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>1</muzzleFlashScale>
