@@ -12,7 +12,7 @@
     	</graphicData>
 		
 		<statBases>
-			<MoveSpeed>6</MoveSpeed>
+			<MoveSpeed>4.7</MoveSpeed>
 			<MarketValue>1600</MarketValue>
 			<ArmorRating_Blunt>0.21</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.67</ArmorRating_Sharp>
@@ -71,7 +71,7 @@
 		<label>mendoria</label>
 		<race>CH_Mendoria</race>
 		<allowInMechClusters>true</allowInMechClusters>
-		<isFighter>false</isFighter>
+		<isFighter>true</isFighter>
 		<combatPower>100</combatPower>
 		<weaponMoney>9999~9999</weaponMoney>
 		
