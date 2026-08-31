@@ -5,7 +5,7 @@
         <xpath>Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 
         <value>
-            <CH_Mendoria>7</CH_Mendoria>
+            <CH_Mendoria>5</CH_Mendoria>
         </value>
     </Operation>
 
