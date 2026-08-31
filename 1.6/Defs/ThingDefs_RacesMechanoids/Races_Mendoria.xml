@@ -72,7 +72,7 @@
 		<race>CH_Mendoria</race>
 		<allowInMechClusters>true</allowInMechClusters>
 		<isFighter>false</isFighter>
-		<combatPower>85</combatPower>
+		<combatPower>100</combatPower>
 		<weaponMoney>9999~9999</weaponMoney>
 		
 		<techHediffsChance>1</techHediffsChance>

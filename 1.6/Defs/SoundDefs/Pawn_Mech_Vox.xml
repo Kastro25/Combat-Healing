@@ -12,7 +12,7 @@
             <clipFolderPath>Mech/Pawn_Mech_Mendoria_Wounded</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>20~20</volumeRange>      
+        <volumeRange>15~15</volumeRange>      
         <pitchRange>0.9541177~1.068824</pitchRange>      
         <repeatMode>NeverTwice</repeatMode>      
         <sustainLoop>False</sustainLoop>
@@ -30,7 +30,7 @@
             <clipFolderPath>Mech/Pawn_Mech_Mendoria_Death</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>20~20</volumeRange>      
+        <volumeRange>15~15</volumeRange>      
         <pitchRange>0.9541177~1.068824</pitchRange>      
         <repeatMode>NeverTwice</repeatMode>      
         <sustainLoop>False</sustainLoop>
@@ -48,7 +48,7 @@
             <clipFolderPath>Mech/Pawn_Mech_Mendoria_Call</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>20~20</volumeRange>      
+        <volumeRange>15~15</volumeRange>      
         <pitchRange>0.9541177~1.068824</pitchRange>      
         <repeatMode>NeverTwice</repeatMode>      
         <sustainLoop>False</sustainLoop>
@@ -67,7 +67,7 @@
             <clipFolderPath>Mech/Pawn_Mech_Mendoria_Wounded_Clean</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>20~20</volumeRange>      
+        <volumeRange>15~15</volumeRange>      
         <pitchRange>0.9541177~1.068824</pitchRange>      
         <repeatMode>NeverTwice</repeatMode>      
         <sustainLoop>False</sustainLoop>
@@ -85,7 +85,7 @@
             <clipFolderPath>Mech/Pawn_Mech_Mendoria_Death_Clean</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>20~20</volumeRange>      
+        <volumeRange>15~15</volumeRange>      
         <pitchRange>0.9541177~1.068824</pitchRange>      
         <repeatMode>NeverTwice</repeatMode>      
         <sustainLoop>False</sustainLoop>
@@ -103,7 +103,7 @@
             <clipFolderPath>Mech/Pawn_Mech_Mendoria_Call_Clean</clipFolderPath>
           </li>
         </grains>      
-        <volumeRange>20~20</volumeRange>      
+        <volumeRange>15~15</volumeRange>      
         <pitchRange>0.9541177~1.068824</pitchRange>      
         <repeatMode>NeverTwice</repeatMode>      
         <sustainLoop>False</sustainLoop>
