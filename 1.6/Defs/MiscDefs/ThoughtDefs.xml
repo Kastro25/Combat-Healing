@@ -3,11 +3,11 @@
 
     <ThoughtDef>
         <defName>CH_NearMendoria</defName>
-        <thoughtClass>CombatHealing.ThoughtWorker_NearMech</thoughtClass>
+        <workerClass>CombatHealing.ThoughtWorker_NearMech</workerClass>
         <validWhileDespawned>false</validWhileDespawned>
         <stages>
         <li>
-            <label>mendoria confort</label>
+            <label>mendoria comfort</label>
             <description>Having a Mendoria nearby comforts me, i fell protected and it's so adorable!</description>
             <baseMoodEffect>5</baseMoodEffect>
         </li>

@@ -18,11 +18,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>CH_MedicGun_Rifle</defName>
 		<label>Chinis Magister</label>
-		<description>A support rifle with a great precision designed to fire darts filled with liquid substances such as HP serum, 
-		upon impact darts inject the substance directly into the bloodstream of the affected person. 
-		Needs to be fueled, an internal mechanism load darts with extra compressed substance increasing their effects, but also its consumption. 
-		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
-		\n\nConsumes 5 fuel units per shoot, base healing ammount is 8 hitpoints, can heal at maximun 6 wounds per bullet.</description>
+		<description>A support rifle with a great precision designed to fire darts filled with liquid substances such as HP serum, upon impact darts inject the substance directly into the bloodstream of the affected person. Needs to be fueled, an internal mechanism load darts with extra compressed substance increasing their effects, but also its consumption. \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nConsumes 5 fuel units per shoot, base healing ammount is 8 hitpoints, can heal at maximun 6 wounds per bullet.</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_HealingCanister_Basic</ThingDef>
             <ThingDef>CH_HealingCanister</ThingDef>   

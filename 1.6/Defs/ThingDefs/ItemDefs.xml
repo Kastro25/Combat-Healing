@@ -5,11 +5,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister_Basic</defName>
 		<label>economic hp serum</label>
-		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair them in seconds. 
-		This economic version uses cheap materials at cost of a low effectiveness, cannot heal scars, lost limbs or diseases. 
-		HP Serum can be loaded inside some weapons 
-		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
-		\n\nBarely strong enough to heal properly, weapons using this serum heal exactly their healing base value</description>
+		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair them in seconds. This economic version uses cheap materials at cost of a low effectiveness, cannot heal scars, lost limbs or diseases. HP Serum can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nBarely strong enough to heal properly, weapons using this serum heal exactly their healing base value</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -46,11 +42,7 @@
     <ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister</defName>
 		<label>standard hp serum</label>
-		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. 
-		This substance was made with standard protocols that allow to perform a correct and effective healing, cannot heal scars, lost limbs or diseases. 
-		Canisters can be loaded inside some weapons 
-		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
-		\n\nProper crafting methods allow weapons using this serum to increase their base healing value by X2.5</description>
+		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This substance was made with standard protocols that allow to perform a correct and effective healing, cannot heal scars, lost limbs or diseases. Canisters can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nProper crafting methods allow weapons using this serum to increase their base healing value by X2.5</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -92,11 +84,7 @@
     <ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister_Advanced</defName>
 		<label>experimental hp serum</label>
-		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. 
-		This experimental strain of mechanites is capable of healing a higher quantity of wounds, however, it still cannot heal scars, lost limbs or diseases but can do some miracles if applied correctly. 
-		Canisters can be loaded inside some weapons 
-		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
-		\n\nDue to its Glitterworld grade creation, weapons using this serum increase their heals by X6 their base healing value.</description>
+		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This experimental strain of mechanites is capable of healing a higher quantity of wounds, however, it still cannot heal scars, lost limbs or diseases but can do some miracles if applied correctly. Canisters can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nDue to its Glitterworld grade creation, weapons using this serum increase their heals by X6 their base healing value.</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
