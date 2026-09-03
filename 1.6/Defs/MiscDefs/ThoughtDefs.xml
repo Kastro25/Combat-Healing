@@ -3,7 +3,7 @@
 
     <ThoughtDef>
         <defName>CH_NearMendoria</defName>
-        <thoughtClass>ThoughtWorker_NearMech</thoughtClass>
+        <thoughtClass>CombatHealing.ThoughtWorker_NearMech</thoughtClass>
         <validWhileDespawned>false</validWhileDespawned>
         <stages>
         <li>
