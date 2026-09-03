@@ -4,8 +4,12 @@
 	<!--=======ECONOMIC ======-->
 	<ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister_Basic</defName>
-		<label>Economic HPserum</label>
-		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair them in seconds. This economic version uses cheap materials at cost of a lower potency, cannot heal scars, lost limbs or diseases. HP Serum can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nWeapons using this serum reduces their base healing to 85% of its value</description>
+		<label>economic hp serum</label>
+		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair them in seconds. 
+		This economic version uses cheap materials at cost of a low effectiveness, cannot heal scars, lost limbs or diseases. 
+		HP Serum can be loaded inside some weapons 
+		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
+		\n\nBarely strong enough to heal properly, weapons using this serum heal exactly their healing base value</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -18,10 +22,10 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<category>Item</category>
-		<stackLimit>10</stackLimit>
+		<stackLimit>25</stackLimit>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
-			<MarketValue>140</MarketValue>
+			<MarketValue>70</MarketValue>
 			<Mass>0.6</Mass>
 			<Flammability>0.6</Flammability>
 			<DeteriorationRate>2.0</DeteriorationRate>
@@ -36,33 +40,17 @@
 		<thingSetMakerTags>
     		<li>RewardStandardMidFreq</li>
 		</thingSetMakerTags>
-
-		<recipeMaker>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<workAmount>12000</workAmount>
-			<researchPrerequisite>CH_Research_economicsubstance</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>4</Crafting>
-				<Intellectual>4</Intellectual>
-			</skillRequirements>
-			<workSkill>Intellectual</workSkill>
-			<displayPriority>420</displayPriority>
-		</recipeMaker>
-		<costList>
-			<Steel>5</Steel>
-			<Silver>1</Silver>
-			<PsychoidLeaves>8</PsychoidLeaves>
-			<MedicineHerbal>2</MedicineHerbal>
-		</costList>
 	</ThingDef>
 
     <!--=======STANDARD ======-->
     <ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister</defName>
-		<label>Standard HPserum</label>
-		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This substance was made with standard protocols that allow to perform a correct and balanced healing, cannot heal scars, lost limbs or diseases. Canisters can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nWeapons using this serum increases their base healing to 125% of its value</description>
+		<label>standard hp serum</label>
+		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. 
+		This substance was made with standard protocols that allow to perform a correct and effective healing, cannot heal scars, lost limbs or diseases. 
+		Canisters can be loaded inside some weapons 
+		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
+		\n\nProper crafting methods allow weapons using this serum to increase their base healing value by X2.5</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -76,11 +64,11 @@
 		<soundInteract>Metal_Drop</soundInteract>
   		<soundDrop>Standard_Drop</soundDrop>
 		<category>Item</category>
-		<stackLimit>10</stackLimit>
+		<stackLimit>25</stackLimit>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
-			<MarketValue>70</MarketValue>
+			<MarketValue>80</MarketValue>
 			<Mass>0.6</Mass>
 			<Flammability>0.6</Flammability>
 			<DeteriorationRate>2.0</DeteriorationRate>
@@ -97,85 +85,18 @@
     		<li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 
-		<recipeMaker>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<workAmount>4000</workAmount>
-			<researchPrerequisite>CH_Research_substance</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-				<Intellectual>8</Intellectual>
-			</skillRequirements>
-			<workSkill>Intellectual</workSkill>
-			<displayPriority>420</displayPriority>
-		</recipeMaker>
-		<costList>
-				<Steel>10</Steel>
-				<Gold>4</Gold>
-				<MedicineIndustrial>3</MedicineIndustrial>
-				<Neutroamine>3</Neutroamine>
-		</costList>
 	</ThingDef>
-	<RecipeDef>
-		<defName>CH_RefineCanister_basic</defName>
-		<label>refine economic hp substances</label>
-		<recipeUsers>
-			<li>DrugLab</li>
-		</recipeUsers>
-		<workAmount>4000</workAmount>
-		<researchPrerequisite>CH_Research_substance</researchPrerequisite>
-		<skillRequirements>
-			<Crafting>6</Crafting>
-			<Intellectual>8</Intellectual>
-		</skillRequirements>
-		<workSkill>Intellectual</workSkill>
-		<displayPriority>420</displayPriority>
-		
-		<ingredients>
-    			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>CH_HealingCanister_Basic</li>
-        				</thingDefs>
-      				</filter>
-      				<count>3</count>
-    			</li>
-			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>Gold</li>
-        				</thingDefs>
-      				</filter>
-      				<count>1</count>
-    			</li>
-			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>MedicineIndustrial</li>
-        				</thingDefs>
-      				</filter>
-      				<count>1</count>
-    			</li>
-			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>Neutroamine</li>
-        				</thingDefs>
-      				</filter>
-      				<count>1</count>
-    			</li>
-  		</ingredients>
-		<products>
-			<CH_HealingCanister>1</CH_HealingCanister>
-		</products>
-	</RecipeDef>
+	
     
 	<!--=======EXPERIMENTAL ======-->
     <ThingDef ParentName="ResourceBase">
 		<defName>CH_HealingCanister_Advanced</defName>
-		<label>Experimental HPserum</label>
-		<description>A hermetically sealed canister containing HPserum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. This experimental strain of mechanites is capable of healing a higher quantity of wounds, however, it still cannot heal scars, lost limbs or diseases but can do some miracles if applied correctly. Canisters can be loaded inside some weapons \n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nWeapons using this serum increases their base healing to 200% of its value</description>
+		<label>experimental hp serum</label>
+		<description>A hermetically sealed canister containing HP serum, a substance filled with specialized mechanites that upon contact with any wound repair wounds in seconds. 
+		This experimental strain of mechanites is capable of healing a higher quantity of wounds, however, it still cannot heal scars, lost limbs or diseases but can do some miracles if applied correctly. 
+		Canisters can be loaded inside some weapons 
+		\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; 
+		\n\nDue to its Glitterworld grade creation, weapons using this serum increase their heals by X6 their base healing value.</description>
 		<descriptionHyperlinks>
             <ThingDef>CH_MedicGun_Rifle</ThingDef>
             <ThingDef>CH_MedicGun_SMG</ThingDef>   
@@ -189,10 +110,10 @@
 		<soundInteract>Metal_Drop</soundInteract>
   		<soundDrop>Standard_Drop</soundDrop>
 		<category>Item</category>
-		<stackLimit>10</stackLimit>
+		<stackLimit>25</stackLimit>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
-			<MarketValue>70</MarketValue>
+			<MarketValue>100</MarketValue>
 			<Mass>0.6</Mass>
 			<Flammability>0.6</Flammability>
 			<DeteriorationRate>2.0</DeteriorationRate>
@@ -207,78 +128,6 @@
 		<thingSetMakerTags>
     		<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-
-		<recipeMaker>
-			<recipeUsers>
-				<li>DrugLab</li>
-			</recipeUsers>
-			<workAmount>8000</workAmount>
-			<researchPrerequisite>CH_Research_advancedsubstance</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>8</Crafting>
-				<Intellectual>10</Intellectual>
-			</skillRequirements>
-			<workSkill>Intellectual</workSkill>
-			<displayPriority>420</displayPriority>
-		</recipeMaker>
-		<costList>
-				<Steel>20</Steel>
-				<Uranium>18</Uranium>
-				<MedicineUltratech>3</MedicineUltratech>
-				<Neutroamine>4</Neutroamine>
-		</costList>
 	</ThingDef>
-	<RecipeDef>
-		<defName>CH_RefineCanister</defName>
-		<label>refine standard hp substances</label>
-		
-		<recipeUsers>
-			<li>DrugLab</li>
-		</recipeUsers>
-		<workAmount>4000</workAmount>
-		<researchPrerequisite>CH_Research_advancedsubstance</researchPrerequisite>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-			<Intellectual>10</Intellectual>
-		</skillRequirements>
-		<workSkill>Intellectual</workSkill>
-		<displayPriority>420</displayPriority>
-		<ingredients>
-    			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>CH_HealingCanister</li>
-        				</thingDefs>
-      				</filter>
-      				<count>3</count>
-    			</li>
-			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>Uranium</li>
-        				</thingDefs>
-      				</filter>
-      				<count>1</count>
-    			</li>
-			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>MedicineUltratech</li>
-        				</thingDefs>
-      				</filter>
-      				<count>1</count>
-    			</li>
-			<li>
-      				<filter>
-        				<thingDefs>
-          					<li>Neutroamine</li>
-        				</thingDefs>
-      				</filter>
-      				<count>1</count>
-    			</li>
-  		</ingredients>
-		<products>
-			<CH_HealingCanister_Advanced>1</CH_HealingCanister_Advanced>
-		</products>
-	</RecipeDef>
+
 </Defs>

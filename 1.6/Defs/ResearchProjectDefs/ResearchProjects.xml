@@ -7,7 +7,7 @@
     <defName>CH_Research_economicsubstance</defName>
     <label>Healing Solutions: The basics</label>
 	  <tab>CH_ResearchTab_HealingSolutions</tab>
-    <description>Learn the basics of synthesizing HPserum, a substance designed for combat filled with specialized mechanites that repair wounds in seconds, discover how to craft a raw version that can be applied via different injection methods.</description>
+    <description>Learn the basics of synthesizing HP serum, a substance designed for combat filled with specialized mechanites that repair wounds in seconds, discover how to craft a raw version that can be applied via different injection methods.</description>
     <baseCost>400</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -22,7 +22,7 @@
     <defName>CH_Research_substance</defName>
     <label>Healing Solutions: Standard protocols</label>
 	  <tab>CH_ResearchTab_HealingSolutions</tab>
-    <description>Study a public paper provided by L.I.G.H.T. that describes standard methods and materials for synthesizing and refining HPserum for a greater effect, unlocks standard HPserum recipes.</description>
+    <description>Study a public paper provided by a mysterious company that describes standard methods and materials for synthesizing and refining HP serum for a greater effect, unlocks standard HP serum recipes.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -38,7 +38,7 @@
     <defName>CH_Research_advancedsubstance</defName>
     <label>Healing Solutions: The Experimental Thesis</label>
 	  <tab>CH_ResearchTab_HealingSolutions</tab>
-    <description>Your colony found an encrypted file on a lost glitterworld network signal, containing the full thesis of the original creator of HPserum, she describes untested methods and hypotheses that allow to unlock the full potential of HPserum. Study this thesis to learn how to craft an experimental compound capable of healing wounds at an increased factor</description>
+    <description>Your colony found an encrypted file on a lost glitterworld network signal, containing the full thesis of the original creator of HP serum, she describes untested methods and hypotheses that allow to unlock the full potential of HP serum. Study this thesis to learn how to craft an experimental HP serum capable of healing wounds at an increased factor. Some records indicate that a mysterious company attempted to assert legal rights over this thesis... Whereabouts of the original creator are unknown.</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

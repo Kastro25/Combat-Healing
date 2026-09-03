@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>CH_NearMendoria</defName>
+        <thoughtClass>ThoughtWorker_NearMech</thoughtClass>
+        <validWhileDespawned>false</validWhileDespawned>
+        <stages>
+        <li>
+            <label>mendoria confort</label>
+            <description>Having a Mendoria nearby comforts me, i fell protected and it's so adorable!</description>
+            <baseMoodEffect>5</baseMoodEffect>
+        </li>
+        <li>
+            <label>mendoria uncanny valley</label>
+            <description>Having a Mendoria agaisnt me is unsettling and makes me feel uneasy</description>
+            <baseMoodEffect>-15</baseMoodEffect>
+        </li>
+        </stages>
+    </ThoughtDef>
+
+<Defs>
