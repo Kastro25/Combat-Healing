@@ -5,7 +5,7 @@
 	<ThingDef ParentName="BaseMechanoid">
 		<defName>CH_Mendoria</defName>
 		<label>mendoria</label>
-		<description>Mendoria is a medical support mechanoid developed to accompany combat squads on active battlefields where their major threats made it no longer feasible to evacuate and care for the wounded. They are equipped with a LED display, propellers for fast movement and a Chinis weapon, but they are helpless when alone, incapable of defend themselves. Its design was intended to boost troop morale in a completely hostile environment were a friendly face was a source of motivation.Long time ago after a terrible defeat numerous Mendorias went lost in the mech frontier, the Mech hive appropriated, repurposed, corrupted and replicated them for its own forces, Mech hive Mendorias are are very disturbing and uncanny, but they now serve a way to healing other mechanoids which was consequently copied by the human designed Mendorias.\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nMendorias can heal both organic beings and mechanoids via shooting them. Thanks to its adorable design Mendoria provide a mood boost to nearby allies, however, an enemy Mendoria is disturbing, and nearby pawns will receive a mood debuff, your Mendorias can disturb enemies. With Vanilla Expanded Framework she ignores terrain movement.</description>
+		<description>Mendoria is a medical support mechanoid developed to accompany combat squads on active battlefields, where the growing threat of enemy forces made evacuating and treating the wounded increasingly impossible. Equipped with a LED display, propellers, and a Chinis weapon, Mendoria excels at keeping allies alive, but it is virtually defenseless when left alone. Its cheerful appearance was designed to keep soldiers morale high in even the most hostile environments (With the help of a small psychic device). Long time ago, after a terrible defeat many Mendorias were lost in the mech frontier, the Mech hive appropriated, repurposed, corrupted and replicated them for heal its own forces, Mech hive Mendorias are very disturbing since their mini psychic device was repurposed. Those new features were consequently copied by the human designed Mendorias.\n\n&lt;color=#cbff52&gt;Gameplay effect:&lt;/color&gt; \n\nMendorias can heal both organic beings and mechanoids. Thanks to their implanted psychic device and cute appearance she provides a mood boost to nearby allies and sends disturbing signals to enemies reducing their mood. With Vanilla Expanded Framework she ignores terrain movement.</description>
 		<graphicData>
         	<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria</texPath>
         	<graphicClass>Graphic_Multi</graphicClass>
@@ -82,7 +82,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria_Clean</texPath>
-					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Overlay</maskPath>
+					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Mask_Clean</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.5</drawSize>
@@ -91,7 +91,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Mechanoid/CH_MechMendoria/CH_Mendoria</texPath>
-					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Overlay</maskPath>
+					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Mask</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
 					<drawSize>1.5</drawSize>

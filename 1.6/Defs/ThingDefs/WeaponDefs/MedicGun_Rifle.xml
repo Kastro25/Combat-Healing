@@ -5,7 +5,7 @@
 		<defName>CH_Chilinisbullet_Rifle</defName>
 		<label>Chilinis Dart</label>
 		<graphicData>
-			<texPath>Things/Projectile/Dart_Rifle</texPath>
+			<texPath>Things/Projectile/Dart_Chilinis</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
