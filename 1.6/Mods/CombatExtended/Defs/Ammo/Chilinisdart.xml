@@ -42,7 +42,7 @@
     <defName>Ammo_CHDartbasicbase_Inyector</defName>
     <label>chilinis dart</label>
     <graphicData>
-      <texPath>Things/Ammo/Dart/Chilinis/chilinis</texPath>
+      <texPath>Things/Ammo/Dart/Chilinis</texPath>
       <graphicClass>Verse.Graphic_StackCount</graphicClass>
     </graphicData>
     <ammoClass>Nail</ammoClass>
