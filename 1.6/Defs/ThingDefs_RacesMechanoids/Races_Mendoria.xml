@@ -85,7 +85,7 @@
 					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Mask_Clean</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.5</drawSize>
+					<drawSize>1.8</drawSize>
 				</bodyGraphicData>
 			</li>
 			<li>
@@ -94,7 +94,7 @@
 					<maskPath>Things/Pawn/Mechanoid/CH_MechMendoria/Overlay/Mask</maskPath>
 					<shaderType>CutoutWithOverlay</shaderType>
 					<graphicClass>Graphic_Multi</graphicClass>
-					<drawSize>1.5</drawSize>
+					<drawSize>1.8</drawSize>
 				</bodyGraphicData>
 			</li>
 		</lifeStages>

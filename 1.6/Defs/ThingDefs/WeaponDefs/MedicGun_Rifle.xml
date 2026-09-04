@@ -61,7 +61,7 @@
 			<AccuracyMedium>0.98</AccuracyMedium>
 			<AccuracyLong>0.96</AccuracyLong>
 			<RangedWeapon_Cooldown>1.45</RangedWeapon_Cooldown>
-			<MarketValue>520</MarketValue>
+			<MarketValue>700</MarketValue>
 		</statBases>
 		
 		<verbs>
